@@ -55,12 +55,10 @@ header {
   border-top: 1px ridge #222324;
 }
 
-#newsText {
-  padding: 35px;
-}
-
 #newsPic {
   border-bottom: 1px ridge #222324;
+  padding: 25px;
+  margin-right: 25px;
 }
 
 #carousel {
@@ -76,8 +74,8 @@ header {
   margin-top: 25px;
 }
 
-.navbar-dark {
-  background-color: transparent;
+.navbar-light {
+  background-color: #9c9c9c;
 }
 
 .nav-item {
