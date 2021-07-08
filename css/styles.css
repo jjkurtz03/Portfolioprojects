@@ -1,36 +1,84 @@
-body {
-   background-image: url("https://i.pinimg.com/originals/42/6a/78/426a78e6d6aa705699fb927bb15e67b1.png");
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: 300%;
+body { 
+  background: url("https://www.solidbackgrounds.com/images/950x350/950x350-light-gray-solid-color-background.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-h2 {
-  color: #3046C5; }
+h1, h2 {
+  -webkit-text-stroke: 1px black;
+}
 
-header h2 {
-  color: #CEC8FF; }
+h3 {
+    color: #222324;
+    -webkit-text-stroke: 1px black;
+   }
+
+h4 {
+  color: #222324;
+  font-size: 25px;
+  -webkit-text-stroke: 1px black;
+}
+
+p {
+  font-size: 18px;
+  -webkit-text-stroke: 1px black;
+}
+
+header {
+  color: white; }
+
+#srchBar {
+  width: 500px;
+  height: 50px;
+}
 
 .site-footer {
-  background-image: linear-gradient(#ccc8ff, white);
+  background-image: linear-gradient(#add1fa, white);
   padding: 20px 0; }
 
 .jumbotron {
   margin: 0;
   padding: 22px;
-  background-image: linear-gradient(to right, #ff0000, #000000, #ff0000);
+  background-image: linear-gradient(to right, #222324, #add1fa);
   color: white;
   -webkit-text-stroke: 1px black;   
 }
 
 .row-content {
-  padding: 50px 0;
-  border-bottom: 1px ridge;
-  min-height: 400px; }
+  padding: 25px 0;
+  min-height: 250px;
+}
 
-  .navbar-dark {
-    background-color: transparent;
-  }
+#subRow {
+  border-top: 1px ridge #222324;
+}
+
+#newsText {
+  padding: 35px;
+}
+
+#newsPic {
+  border-bottom: 1px ridge #222324;
+}
+
+#carousel {
+  padding: 25px 0;
+}
+
+#gamePar {
+  border-bottom: 1px ridge #222324;
+}
+
+.img-thumbnail {
+  background-color: black;
+  margin-top: 25px;
+}
+
+.navbar-dark {
+  background-color: transparent;
+}
 
 .nav-item {
   -webkit-text-stroke: 1px black;
@@ -41,6 +89,7 @@ header h2 {
     border-radius: 50%;
     border: 2px solid rgb(0, 0, 0);
 }
+
 
 
 

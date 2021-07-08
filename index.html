@@ -23,14 +23,16 @@
             <div class="col-4 col-sm-3 col-md-2 align-self-center">
                 <img src="img/logo.png" id="logo" class="img-fluid" />
             </div>
-            <div class="col align-self-center">
+            <div class="col align-items-center">
                 <h1>Game Review</h1>
                 <h2>Honest First Impressions</h2>
             </div>
-            <div class="col-md-4 col-xl-2 mt-4">
-                <a role="button" id="loginButton" class="btn btn-lg btn-outline-dark btn-light fa fa-user-circle fa-2x"> Login</a>
+            <div class="col-sm-2 mt-4">
+                <a role="button" id="loginButton" class="btn btn-outline-dark btn-light fa fa-user-circle fa-2x"> Login</a>
             </div>
-            <div class="input-group rounded">
+        </div>
+        <div class="row">
+            <div class="col-md-4 input-group rounded" id="srchBar">
                 <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                   aria-describedby="search-addon" />
                 <span class="input-group-text border-0" id="search-addon">
@@ -85,7 +87,7 @@
                             </div>
                             <div class="form-row">
                                 <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Login</button>
                             </div>
                         </form>
                     </div>
@@ -95,8 +97,10 @@
         </div>
     </div>
 
-    <div class="row row-content">
-        <div class="col-md-5 mx-auto">
+<div class="container">
+    <div class="row row-content" id="carousel">
+        <div class="col-md-8 mx-auto">
+            <h3>Editor's Picks</h3>
             <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -121,52 +125,122 @@
         </div>
     </div>
 
-    <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail" />
-                    <div class="media-body align-self-center">
-                    <h3>Our Campsites</h3>
-                    <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-                </div>
-                </div>
-            </div>
-        </div>
+            <h3 class="text-sm-right">New Reviews</h3>
+            <div class="row" id="subRow">
+                <div class="col-sm-3">
+                <tbody>
+                    <tr>
+                        <th>
+                            <div>
+                                <img class="img-thumbnail img-fluid" src="img/ys9.png" alt="Y's XI cover art, Adol and cast members descending on city">
+                            </div>
+                            <div>
+                                <h4>Y's XI Monstrum Nox</h2>
+                            </div>
+                            <div>
+                                <p class="d-none d-sm-block" id="gamePar">This time around Adol gets himself mixed up with a group of Monstrums on another thrilling adventure.
+                                </p>
+                            </div>
+                        </th>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 cold-md-3">
-                <h2>Featured Campsites</h2>
+                    </tr>
+                </tbody>
             </div>
-                <div class="col"> 
-                    <div class="media">    
-                        <div class="media-body align-self-center">
-                        <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a
-                    </div>
-                        <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="Breadcrumb Lake thumbnail" /> 
-                </div>   
-            </div>
-        </div>
+            <div class="col-sm-3">
+                <tbody>
+                    <tr>
+                        <th>
+                            <div>
+                                <img class="img-thumbnail img-fluid" src="img/mgsr.png" alt="Final Fantasy 7 Remake cover art Cloud holding buster sword">
+                            </div>
+                            <div>
+                                <h4>Mario Golf: Super Rush</h2>
+                            </div>
+                            <div>
+                                <p class="d-none d-sm-block" id="gamePar">The newest iteration of Mario Golf is a premier choice to play a few rounds with your friends.
+                                </p>
+                            </div>
+                        </th>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 order-sm-last cold-md-3">
-            <h2 class="text-sm-right">Our Community Partners</h2>
+                    </tr>
+                </tbody>
             </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-                    <div class="media-body align-self-center">
-                    <h3>Bootstrap Outfitters</h3>
-                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                </div>
-                </div>
+            <div class="col-sm-3">
+                <tbody>
+                    <tr>
+                        <th>
+                            <div>
+                                <img class="img-thumbnail img-fluid" src="img/mhs2.png" alt="Final Fantasy 7 Remake cover art Cloud holding buster sword">
+                            </div>
+                            <div>
+                                <h4>Monster Hunter Stories 2</h2>
+                            </div>
+                            <div>
+                                <p class="d-none d-sm-block" id="gamePar">See Capcom's sequel to the orgininal coming to PC and Nintendo Switch next week.
+                                </p>
+                                <br>
+                            </div>
+                        </th>
+
+                    </tr>
+                </tbody>
+            </div>
+            <div class="col-sm-3">
+                <tbody>
+                    <tr>
+                        <th>
+                            <div>
+                                <img class="img-thumbnail img-fluid" src="img/ff7r.png" alt="Final Fantasy 7 Remake cover art Cloud holding buster sword">
+                            </div>
+                            <div>
+                                <h4>Final Fantasy 7: Remake</h2>
+                            </div>
+                            <div>
+                                <p class="d-none d-sm-block" id="gamePar">The Remake of Square-Enix's classic Final Fantasy 7 will leave you wanting more.
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </tbody>
             </div>
         </div>
     </div>
+
+    <h3>Top Stories</h3>
+    <div class="row row-content" id="subRow">
+        <div class="col-sm-3" id="newsPic">
+            <img class="rounded float-left" src="img/nintendoswitch.png" alt="Picture of Nintendo Switch OLED handheld device"> 
+        </div>
+        <div class="col-sm-4">
+            <h4 id="newsText">Nintendo Switch OLED: What you need to know</h4>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-sm-3" id="newsPic">
+            <img class="rounded float-left" src="img/ds3.png" alt="Cover art for Dark Souls 3"> 
+        </div>
+        <div class="col-sm-4">
+            <h4 id="newsText">Dark Souls 3 now runs at 60 FPS on Xbox Series X/S</h4>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-sm-3" id="newsPic">
+            <img class="rounded float-left" src="img/mhs2news.png" alt="Monster Hunter Stories 2 protagonist and Monsties"> 
+        </div>
+        <div class="col-sm-4">
+            <h4 id="newsText">Monster Hunter Stories 2: Wings of Ruin Launches This Week</h4>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-sm-3" id="newsPic">
+            <img class="rounded float-left" src="img/da4.png" alt="Concept art for Dragon Age 4 class"> 
+        </div>
+        <div class="col-sm-4">
+            <h4 id="newsText">See The New Concept Art for Dragon Age 4</h4>
+        </div>
+    </div>
+</body>
 
     <footer class="site-footer">
         <div class="container">

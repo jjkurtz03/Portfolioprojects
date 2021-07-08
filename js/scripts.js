@@ -1,4 +1,5 @@
 $(function() {
+      $(".carousel").carousel( { interval: 4000} );
       $(".left").click(function(){
         $("#homeCarousel").carousel("prev");
       });
