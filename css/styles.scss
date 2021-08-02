@@ -1,45 +1,100 @@
-$color-primary: #3046C5;
-$color-secondary: #5637dd;
-$color-pale: #CEC8FF;
-$color-mid: #901CAD;
-$color-dark: #60106b;
-$color-teal: #17A2B8;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
-$body-font: "Open Sans", sans-serif;
-$header-font: "Lobster", cursive;
 
-h2 {
-    color: $color-primary; 
+
+body { 
+    background: url("https://www.solidbackgrounds.com/images/950x350/950x350-light-gray-solid-color-background.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  h3, h4, h5, h6 {
+    color: #222324;
+       
+  }
+  p {
+    font-size: 18px;
+  }
+  
+  header {
+    color: white; 
 }
-
-header {    
-    h2 {
-    color: $color-pale;
-    }
-}
-
-.site-footer {
-    background-image: linear-gradient($color-pale, white);
-    padding: 20px 0;
-}
-
-.jumbotron {
+  
+  .site-footer {
+    background-image: linear-gradient(#add1fa, white);
+    padding: 20px 0; }
+  
+  .jumbotron {
     margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
-    color: white;
+    padding: 22px;
+    background-image: linear-gradient(to right, #222324, #add1fa);
+    color: white; 
+  }
+  
+  .row-content {
+    padding: 25px 0;
+    
+  }
+  
+  .subrow {
+    border-top: 1px ridge #222324;
+  }
+  
+  #newsPic {
+    border-bottom: 1px ridge #222324;
+    padding: 25px;
+    margin-right: 25px;
+  }
+  
+  #carousel {
+    .img-overlay {
+       position: relative;
+       display: inline-block;
+    }
+    .img-overlay::after{
+        content: '';
+        position: absolute;
+        left: 0; top: 0;
+        width: 100%; height: 100%;
+        display: inline-block;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.05),rgba(0,0,0,0.1),rgba(0,0,0,0.1),rgba(0,0,0,0.4),rgba(0,0,0,.7),rgba(0,0,0,0.9));
+    }
+    .img-overlay img {
+        display: block;
+    }
+    .carousel-caption{
+        z-index: 3;
+        h1, h2, h3, h4, h5, h6, p{
+            color: white;
+        }
+    }
+  }
+  
+  #gamePar {
+    border-bottom: 1px ridge #222324;
+  }
+  
+  .img-thumbnail {
+    background-color: black;
+    margin-top: 25px;
+  }
+  
+  a#navbarDropdownMenuLink {
+      color: #4f4f4f;
+  }
+  
+  .nav-item {
+    font-size: large; 
+  }
+  
+  #logo {
+      border-radius: 50%;
+  }
+  
+  #loginModal .modal-header {
+    background-color: #add1fa;
+    color: white; 
 }
-
-.row-content {
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
-}
-
-.navbar-dark {
-    background-color: $color-mid;
-}
-
-#logo {
-    border-radius: 50%;
-}
+  
+  
